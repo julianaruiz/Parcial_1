@@ -4,12 +4,13 @@
 #define r_des_O 0.05
 #define pi 3.141
 #define g 9,81
+#define t_0 2.5
 
 using namespace std;
 
 int main()
 {
-    float v_o, angu_o, h1, , d, x_max, y_max, a, b, c, t1, t2;
+    float v_o, angu_o, h1, , d, x_max, y_max, a, b, c, t1, t2, l;
     cout << "Sistema de control de disparo defensivo" << endl;
     cout << endl;
     cout << "Ingrese la velocidad inicial del cañon enemigo: ";
@@ -38,6 +39,7 @@ int main()
     }
 
     if (x_max==(d-0.05) || x_max==(d-0.04) || x_max==(d-0.03) || x_max==(d-0.02) || x_max==(d-0.01) || x_max==d){
+        l=(g/2)*pow(t_0,2); //mide la dsitancia que a avanzado hasta 2,5
 
     }
     else{
