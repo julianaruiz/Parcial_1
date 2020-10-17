@@ -10,7 +10,7 @@ using namespace std;
 
 int main()
 {
-    float v_o, angu_o, h1, , d, x_max, y_max, a, b, c, t1, t2, t, x(t_0), y(t_0);
+    float v_o, angu_o, h1, , d, x_max, y_max, a, b, c, t1, t2, t, x(t_0), y(t_0), y_max_D;
     cout << "Sistema de control de disparo defensivo" << endl;
     cout << endl;
     cout << "Ingrese la velocidad inicial del cañon enemigo: ";
@@ -35,13 +35,14 @@ int main()
         t=t2
 
     x_max=v_o*(cos(angu_o*pi/180))*t; //mide la distancia en x que a avanzado hasta t.
-    y(t_0)=h1+v_o*sin(angu_o*pi/180)*t-g/2*pow(t,2); //mide la distancia en y que a avanzado hasta t.
+    y_max=h1+v_o*sin(angu_o*pi/180)*t-g/2*pow(t,2); //mide la distancia en y que a avanzado hasta t.
 
     if (x_max==(d-0.05) || x_max==(d-0.04) || x_max==(d-0.03) || x_max==(d-0.02) || x_max==(d-0.01) || x_max==d){ //el disparo alcanza al cañón.
 
         x(t_0)=v_o*(cos(angu_o*pi/180))*t_0; //mide la distancia en x que a avanzado hasta t=2,5.
         y(t_0)=h1+v_o*sin(angu_o*pi/180)*t_0-g/2*pow(t_0,2); //mide la distancia en y que a avanzado hasta t=2,5.
-        y_max=(h1-y(t_0)+t1-g/2*pow(t1,2);
+        y_max_D=h1+v_o*sin(angu_o*pi/180)*t_0-g/2*pow(t_0,2);
+        x_max_D=v_o*(cos(angu_o*pi/180))*t_0;
 
 
     }
